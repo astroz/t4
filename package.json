@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "concurrently \"cd service && npm install\" \"cd client && npm install\"",
     "start": "concurrently \"cd service && npm run start\" \"cd client && react-scripts start\""
   },
   "keywords": [],
